@@ -1,6 +1,7 @@
 package com.codepath.bestsellerlistapp
 
 import com.google.gson.annotations.SerializedName
+import java.net.URL
 
 /**
  * The Model for storing a single book from the NY Times API
@@ -20,11 +21,12 @@ class BestSellerBook {
     @SerializedName("author")
     var author: String? = null
 
-    //TODO bookImageUrl
+    @SerializedName("book_image")
+    var bookImageUrl: String? = null
 
+    @SerializedName("description")
+    var description : String? = null
 
-    //TODO description
-
-
-    //TODO-STRETCH-GOALS amazonUrl
+    @SerializedName("amazon_product_url")
+    var amazonUrl : URL? = null
 }
